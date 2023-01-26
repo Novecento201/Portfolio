@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  height: 50px;
+  font-size: var(--semi-big-font-size);
+  font-weight: 600;
+}
+.words span {
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: var(--first-color-lighter);
+  animation: spin_words 6s infinite;
+
+  text-shadow: 2.5px 2.5px var(--first-color);
+}
+.words {
+  overflow: hidden;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    font-size: var(--big-font-size);
+  }
+}

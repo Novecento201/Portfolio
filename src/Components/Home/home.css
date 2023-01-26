@@ -1,0 +1,48 @@
+.home-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.home-title {
+  font-size: var(--big-font-size);
+}
+
+.home-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.home-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.home-button {
+  display: block;
+  margin: 0 auto;
+  font-size: var(--semi-big-font-size);
+  padding: 1.25rem 2.5rem;
+  border: 2px solid var(--first-color);
+  font-weight: 600;
+  border-radius: 1rem;
+}
+.home-button:hover {
+  background-color: var(--first-color-lighter);
+  color: var(--first-color);
+}
+@media screen and (min-width: 800px) {
+  .home-title {
+    font-size: calc(var(--big-font-size) * 1.7);
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .home-container {
+    height: 100vh;
+  }
+}

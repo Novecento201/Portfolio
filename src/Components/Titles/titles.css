@@ -1,0 +1,29 @@
+.first-title {
+  font-size: var(--big-font-size);
+  color: white;
+  -webkit-text-stroke: 1px var(--first-color);
+  text-shadow: 2px 2px var(--first-color-lighter);
+}
+
+.second-title {
+  display: flex;
+  color: var(--first-color-lighter);
+  font-size: calc(var(--big-font-size) * 1.2);
+  font-weight: 700;
+  text-shadow: 3px 3px var(--first-color);
+  letter-spacing: 0.1rem;
+  height: min-content;
+}
+
+.space {
+  width: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .first-title {
+    font-size: calc(var(--big-font-size) * 1.2);
+  }
+  .second-title {
+    font-size: calc(var(--big-font-size) * 1.7);
+  }
+}

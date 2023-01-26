@@ -1,0 +1,183 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* VARIABLES CSS */
+
+:root {
+  /* COLORS */
+
+  /* The favicon is not responsive to this variable.*/
+  --hue-color: 250;
+
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+
+  --container-color-lighter: hsl(var(--hue-color), 16%, 94%);
+  --container-color: hsl(var(--hue-color), 60%, 99%);
+
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  /* Font and typography */
+
+  --body-font: 'Poppins', sans-serif;
+
+  --big-font-size: 3.2rem;
+  --semi-big-font-size: 2.4rem;
+  --normal-font-size: 1.8rem;
+  --semi-small-font-size: 1.2rem;
+  --small-font-size: 1rem;
+}
+
+/* Variables Dark theme */
+
+body.dark {
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+
+  --container-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color-lighter: hsl(var(--hue-color), 27%, 22%);
+
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--first-color);
+}
+
+/* BASE */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--container-color);
+  color: var(--text-color);
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: var(--first-color);
+  transition: 300ms ease-in-out;
+}
+
+a:hover {
+  color: var(--first-color-lighter);
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--first-color);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--first-color-lighter);
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  padding: 6rem 0;
+}
+
+section:nth-child(odd) {
+  background-color: var(--container-color);
+}
+
+section:nth-child(even) {
+  background-color: var(--container-color-lighter);
+}
+
+.container::after,
+.container::before {
+  background-color: var(--container-color);
+}
+
+.about-container::after,
+.about-container::before {
+  background-color: var(--container-color-lighter);
+}
+
+.contact-container::after,
+.contact-container::before {
+  background-color: transparent;
+}
+
+.container::after,
+.container::before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  bottom: -5px;
+  z-index: 1;
+}
+
+.container::before {
+  right: 95%;
+  transform: skew(0, 40deg);
+}
+
+.container::after {
+  left: 5%;
+  transform: skew(0, -40deg);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 10rem;
+  }
+}
