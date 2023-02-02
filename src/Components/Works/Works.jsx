@@ -13,7 +13,7 @@ import img6 from '../../img/projects/README_FINALPROJECT2.gif';
 import img7 from '../../img/projects/prj5.png';
 import img8 from '../../img/projects/prj7.png';
 import img9 from '../../img/projects/quiz.gif';
-import img10 from '../../img/projects/lyriks.png';
+// import img10 from '../../img/projects/lyriks.png';
 import img11 from '../../img/projects/ytclone.png';
 import img12 from '../../img/projects/movie.gif';
 
@@ -101,15 +101,15 @@ const projects = [
     img: img9,
     technologies: ['react'],
   },
-  {
-    id: 10,
-    title: 'Lyrics',
-    github: 'https://github.com/Novecento201/lyriks-YT-Clone',
-    link: 'https://novecento-lyriks-app.netlify.app/',
-    text: 'Video YT Tutorial. <br /> A "clone" site of Spotify. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=I1cpb0tYV74&list=WL" target="_blank"></a> video ',
-    img: img10,
-    technologies: ['react'],
-  },
+  // {
+  //   id: 10,
+  //   title: 'Lyrics',
+  //   github: 'https://github.com/Novecento201/lyriks-YT-Clone',
+  //   link: 'https://novecento-lyriks-app.netlify.app/',
+  //   text: 'Video YT Tutorial. <br /> A "clone" site of Spotify. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=I1cpb0tYV74&list=WL" target="_blank"></a> video ',
+  //   img: img10,
+  //   technologies: ['react'],
+  // },
   {
     id: 11,
     title: 'Youtube Clone',

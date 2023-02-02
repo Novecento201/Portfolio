@@ -8,12 +8,12 @@ const Footer = () => {
     <footer className=" footer-container footer">
       {/* <!-- WAVES SVG --> */}
       <svg
-        class="waves"
+        className="waves"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
-        shape-rendering="auto"
+        shapeRendering="auto"
       >
         <defs>
           <path
@@ -21,7 +21,7 @@ const Footer = () => {
             d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
           />
         </defs>
-        <g class="parallax">
+        <g className="parallax">
           <use
             xlinkHref="#gentle-wave"
             x="48"
@@ -49,27 +49,27 @@ const Footer = () => {
         </g>
       </svg>
 
-      <div class="footer-content">
-        <div class="footer-socials">
+      <div className="footer-content">
+        <div className="footer-socials">
           <a href="https://github.com/Novecento201" target="_blank">
-            <AiFillGithub class="icon-footer" />
+            <AiFillGithub className="icon-footer" />
           </a>
 
           <a
             href="https://www.linkedin.com/in/marco-lovato-3816a3229/"
             target="_blank"
           >
-            <AiFillLinkedin class="icon-footer" />
+            <AiFillLinkedin className="icon-footer" />
           </a>
 
           <a
             href="https://discordapp.com/users/744882319717826620"
             target="_blank"
           >
-            <SiDiscord class="icon-footer" />
+            <SiDiscord className="icon-footer" />
           </a>
         </div>
-        <p class="text-copy">
+        <p className="text-copy">
           &copy; 2022 | Designed and coded by Marco Lovato
         </p>
       </div>
