@@ -13,9 +13,10 @@ import img6 from '../../img/projects/README_FINALPROJECT2.gif';
 import img7 from '../../img/projects/prj5.png';
 import img8 from '../../img/projects/prj7.png';
 import img9 from '../../img/projects/quiz.gif';
-// import img10 from '../../img/projects/lyriks.png';
+import img10 from '../../img/projects/lyriks.png';
 import img11 from '../../img/projects/ytclone.png';
 import img12 from '../../img/projects/movie.gif';
+import img13 from '../../img/projects/budgeting.png';
 
 import './works.css';
 
@@ -101,15 +102,15 @@ const projects = [
     img: img9,
     technologies: ['react'],
   },
-  // {
-  //   id: 10,
-  //   title: 'Lyrics',
-  //   github: 'https://github.com/Novecento201/lyriks-YT-Clone',
-  //   link: 'https://novecento-lyriks-app.netlify.app/',
-  //   text: 'Video YT Tutorial. <br /> A "clone" site of Spotify. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=I1cpb0tYV74&list=WL" target="_blank"></a> video ',
-  //   img: img10,
-  //   technologies: ['react'],
-  // },
+  {
+    id: 10,
+    title: 'Lyrics',
+    github: 'https://github.com/Novecento201/lyriks-YT-Clone',
+    link: 'https://novecento-lyriks-app.netlify.app/',
+    text: 'Video YT Tutorial. <br /> A "clone" site of Spotify. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=I1cpb0tYV74&list=WL" target="_blank"></a> video ',
+    img: img10,
+    technologies: ['react'],
+  },
   {
     id: 11,
     title: 'Youtube Clone',
@@ -126,6 +127,15 @@ const projects = [
     link: 'https://quiz-novecento.netlify.app/',
     text: 'Site created to test my skills with <strong>React</strong>, the site is not responsive!',
     img: img12,
+    technologies: ['react'],
+  },
+  {
+    id: 13,
+    title: 'Financial tracker',
+    github: 'https://github.com/Novecento201/Budgeting-app-react-router-course',
+    link: 'https://personal-finance-budgeting.netlify.app/',
+    text: 'Site created following a tutorial to study all the features of the new react-router-dom (v6.9 in this tutorial).',
+    img: img13,
     technologies: ['react'],
   },
 ];
@@ -148,9 +158,15 @@ const Works = () => {
   });
 
   return (
-    <section id="works" className="works-section">
+    <section
+      id="works"
+      className="works-section"
+    >
       <div className="container works-container">
-        <Titles first={'Works'} second={"Stuff I've built"} />
+        <Titles
+          first={'Works'}
+          second={"Stuff I've built"}
+        />
 
         {/* Filter */}
         <div className="works-filter">
@@ -197,7 +213,10 @@ const Works = () => {
         {/* Result filter */}
         <div className="posts-container">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="post">
+            <div
+              key={project.id}
+              className="post"
+            >
               <img
                 src={project.img}
                 alt={`Image of ${project.title}`}
@@ -208,10 +227,16 @@ const Works = () => {
                 <div className="post-header">
                   <h4>{project.title}</h4>
                   <div className="post-icons-container">
-                    <a href={project.github} target="_blank">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                    >
                       <UilGithubAlt className="post-icons" />
                     </a>
-                    <a href={project.link} target="_blank">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                    >
                       <UilEye className="post-icons" />
                     </a>
                   </div>
