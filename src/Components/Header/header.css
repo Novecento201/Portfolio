@@ -40,8 +40,12 @@
 .header-logo {
   width: 35px;
   height: 35px;
+  transition: 300ms ease-in-out;
 }
 
+.header-logo:hover {
+  filter: drop-shadow(0 0 10px var(--first-color));
+}
 .header-icon {
   color: var(--first-color);
   width: 15px;
@@ -114,6 +118,7 @@
     width: 60px;
     height: 60px;
   }
+
   .navbar-icon {
     width: 30px;
     height: 30px;

@@ -34,19 +34,31 @@ const Header = () => {
 
   const navLinksMobile = (
     <div className="nav-links-mobile">
-      <a href="#home" onClick={() => setIsNavOpen(false)}>
+      <a
+        href="#home"
+        onClick={() => setIsNavOpen(false)}
+      >
         <AiOutlineHome className="navbar-icon" />
         Home
       </a>
-      <a href="#about" onClick={() => setIsNavOpen(false)}>
+      <a
+        href="#about"
+        onClick={() => setIsNavOpen(false)}
+      >
         <BsPerson className="navbar-icon" />
         About
       </a>
-      <a href="#works" onClick={() => setIsNavOpen(false)}>
+      <a
+        href="#works"
+        onClick={() => setIsNavOpen(false)}
+      >
         <SlBriefcase className="navbar-icon" />
         Works
       </a>
-      <a href="#contact" onClick={() => setIsNavOpen(false)}>
+      <a
+        href="#contact"
+        onClick={() => setIsNavOpen(false)}
+      >
         <BsChatLeft className="navbar-icon" />
         Contact
       </a>
@@ -71,7 +83,11 @@ const Header = () => {
       {isNavOpen && navLinksMobile}
       <nav className=" nav-container">
         <a href="https://marcolovato-portfolio.netlify.app/">
-          <img src={Logo} alt="Logo" className="header-logo" />
+          <img
+            src={Logo}
+            alt="Logo"
+            className="header-logo"
+          />
         </a>
 
         <div className="nav-links">
