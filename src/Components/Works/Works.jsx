@@ -17,6 +17,7 @@ import img10 from '../../img/projects/lyriks.png';
 import img11 from '../../img/projects/ytclone.png';
 import img12 from '../../img/projects/movie.gif';
 import img13 from '../../img/projects/budgeting.png';
+import img14 from '../../img/projects/multi-step-form-desktop-preview.png';
 
 import './works.css';
 
@@ -107,7 +108,7 @@ const projects = [
     title: 'Lyrics',
     github: 'https://github.com/Novecento201/lyriks-YT-Clone',
     link: 'https://novecento-lyriks-app.netlify.app/',
-    text: 'Video YT Tutorial. <br /> A "clone" site of Spotify. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=I1cpb0tYV74&list=WL" target="_blank"></a> video ',
+    text: 'Video YT Tutorial. <br /> A "clone" site of Spotify. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=I1cpb0tYV74&list=WL" target="_blank">video</a>  ',
     img: img10,
     technologies: ['react'],
   },
@@ -116,7 +117,7 @@ const projects = [
     title: 'Youtube Clone',
     github: 'https://github.com/Novecento201/youtube-clone-YT-Clone',
     link: 'https://youtube-clone-novecento.netlify.app/',
-    text: 'Video YT Tutorial. <br /> A "clone" site of youtube. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=FHTbsZEJspU&t=4094s" target="_blank"></a> video ',
+    text: 'Video YT Tutorial. <br /> A "clone" site of youtube. <br/> Made thanks to this <a href="https://www.youtube.com/watch?v=FHTbsZEJspU&t=4094s" target="_blank">video</a>  ',
     img: img11,
     technologies: ['react'],
   },
@@ -134,8 +135,17 @@ const projects = [
     title: 'Financial tracker',
     github: 'https://github.com/Novecento201/Budgeting-app-react-router-course',
     link: 'https://personal-finance-budgeting.netlify.app/',
-    text: 'Site created following a tutorial to study all the features of the new react-router-dom (v6.9 in this tutorial).',
+    text: 'Site created following a <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9iNnY07bh_UPaRIQZcJfARY" target="_blank">tutorial</a> to study all the features of the new react-router-dom (v6.9 in this tutorial).',
     img: img13,
+    technologies: ['react'],
+  },
+  {
+    id: 14,
+    title: 'Multi step form',
+    github: 'https://github.com/Novecento201/multi-step-form-front-mentor',
+    link: 'https://multi-form-front-mentor-novento01.netlify.app/',
+    text: '<a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ" target="_blank">Frontend Mentor Challenge</a>, I made this project for testing my react skills.',
+    img: img14,
     technologies: ['react'],
   },
 ];
