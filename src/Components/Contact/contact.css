@@ -52,11 +52,14 @@
     text-align: start;
     grid-area: text;
     margin-bottom: 5rem;
-    /* max-width: 400px; */
   }
   .contact-socials {
     grid-area: ico;
     position: relative;
+    margin-top: 0;
+  }
+  .contact-social:nth-child(1) {
+    margin-top: 0;
   }
 
   .form {
