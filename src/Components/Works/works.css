@@ -74,6 +74,7 @@ input[type='checkbox'] {
 .post-content {
   width: 100%;
   padding: 0.5rem 1rem;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,6 +145,7 @@ input[type='checkbox'] {
   }
 
   .post-content {
+    gap: 0;
     width: 50%;
     height: 100%;
     justify-content: flex-start;
