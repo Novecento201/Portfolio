@@ -32,6 +32,12 @@
 .contact-text-link {
   margin: 0rem 0.5rem;
 }
+.about-last-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+}
 
 .contact-link {
   display: block;

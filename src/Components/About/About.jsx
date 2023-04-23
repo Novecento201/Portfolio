@@ -7,6 +7,7 @@ import Habitat from '../../img/habitat.jpeg';
 import { BsPersonCircle } from 'react-icons/bs';
 import { TbSchool } from 'react-icons/tb';
 import { SlRocket } from 'react-icons/sl';
+import { FiExternalLink } from 'react-icons/fi';
 
 import { UilHeadSide } from '@iconscout/react-unicons';
 import { UilBracketsCurly } from '@iconscout/react-unicons';
@@ -81,9 +82,15 @@ const About = () => {
   }
 
   return (
-    <section id="about" className="about-section">
+    <section
+      id="about"
+      className="about-section"
+    >
       <div className="container about-container">
-        <Titles first={'About me'} second={'Who is Marco?'} />
+        <Titles
+          first={'About me'}
+          second={'Who is Marco?'}
+        />
 
         {/* Blob */}
         <div className="blob">
@@ -93,7 +100,13 @@ const About = () => {
             className="about-blob"
           >
             <defs>
-              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <linearGradient
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
                 <stop
                   offset="0%"
                   style={{ stopColor: 'var(--first-color-lighter)' }}
@@ -104,12 +117,22 @@ const About = () => {
                 ></stop>
               </linearGradient>
 
-              <filter id="f1" x="0" y="0">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+              <filter
+                id="f1"
+                x="0"
+                y="0"
+              >
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="1"
+                />
               </filter>
             </defs>
 
-            <mask id="mask0" mask-type="alpha">
+            <mask
+              id="mask0"
+              mask-type="alpha"
+            >
               <path
                 fill="url(#gradient)"
                 transform="translate(100 100)"
@@ -153,7 +176,12 @@ const About = () => {
                     "
                 ></animate>
               </path>
-              <image className="about-blob-img" x={40} y={25} href={Profilo} />
+              <image
+                className="about-blob-img"
+                x={40}
+                y={25}
+                href={Profilo}
+              />
             </g>
           </svg>
         </div>
@@ -174,7 +202,10 @@ const About = () => {
           <p>
             I'm happiest when I'm creating, learning, doing sport and thinking
             about how to make things better.
-            <a onClick={() => handleOpenModal(1)} className="contact-link">
+            <a
+              onClick={() => handleOpenModal(1)}
+              className="contact-link"
+            >
               More about me...
             </a>
           </p>
@@ -200,9 +231,21 @@ const About = () => {
           <p>
             I'm available to start my first job as Frontend developer, feel free
             to reach out!
-            <a href="#contact" className="contact-link">
-              Get in touch!
-            </a>
+            <div className="about-last-btns">
+              <a
+                href="#contact"
+                className="contact-link"
+              >
+                Get in touch!
+              </a>
+              <a
+                href="https://drive.google.com/file/d/15MleUtJvAKZU908Vsw2lDaYDE9_D2IDS/view?usp=sharing"
+                className="contact-link"
+                target="_blank"
+              >
+                Watch my CV <FiExternalLink />
+              </a>
+            </div>
           </p>
         </div>
 
@@ -251,7 +294,10 @@ const About = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h2>Biography</h2>
-              <span className="close" onClick={() => handleCloseModal(1)}>
+              <span
+                className="close"
+                onClick={() => handleCloseModal(1)}
+              >
                 ×
               </span>
             </div>
@@ -260,7 +306,10 @@ const About = () => {
 
             <div className="modal-body-about">
               <div className="img-modal">
-                <img src={Habitat} alt="Image of Marco using PC" />
+                <img
+                  src={Habitat}
+                  alt="Image of Marco using PC"
+                />
               </div>
 
               <ul className="biography">
@@ -315,7 +364,10 @@ const About = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h2>Skills</h2>
-              <span className="close" onClick={() => handleCloseModal(2)}>
+              <span
+                className="close"
+                onClick={() => handleCloseModal(2)}
+              >
                 ×
               </span>
             </div>
@@ -490,7 +542,10 @@ const About = () => {
           {/* Modal content  */}
           <div className="modal-content">
             <div className="modal-header">
-              <span className="close" onClick={() => handleCloseModal(3)}>
+              <span
+                className="close"
+                onClick={() => handleCloseModal(3)}
+              >
                 ×
               </span>
               <h2>Goals</h2>
