@@ -13,6 +13,7 @@ import img12 from '../../img/projects/movie.gif';
 import img13 from '../../img/projects/budgeting.png';
 import img14 from '../../img/projects/multi-step-form-desktop-preview.png';
 import img15 from '../../img/projects/expenses-chart-frontend-mentor.png';
+import img16 from '../../img/projects/rest-countries-api.png';
 
 import './works.css';
 
@@ -151,6 +152,15 @@ export const projects = [
     link: 'https://expenses-chart-frontmentor-novecento.netlify.app/',
     text: '<a href="https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt/hub" target="_blank">Frontend Mentor Challenge</a>, made to improve my charting skills, powered by <a href="https://chartscss.org/" target="_blank" >charts.css</a>.',
     img: img15,
+    technologies: ['react'],
+  },
+  {
+    id: 16,
+    title: 'REST Countries API',
+    github: 'https://github.com/Novecento201/REST-Countries-API',
+    link: 'https://rest-countries-api-novecent01.netlify.app/',
+    text: '<a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca" target="_blank">Frontend Mentor Challenge</a>, made to improve my REST-API skills.',
+    img: img16,
     technologies: ['react'],
   },
 ];
