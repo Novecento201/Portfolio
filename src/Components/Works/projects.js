@@ -15,6 +15,8 @@ import img14 from '../../img/projects/multi-step-form-desktop-preview.png';
 import img15 from '../../img/projects/expenses-chart-frontend-mentor.png';
 import img16 from '../../img/projects/rest-countries-api.png';
 import img17 from '../../img/projects/e-commerce-product-page.jpg';
+import img18 from '../../img/projects/node-mongo-ninjia-tuto.png';
+import img19 from '../../img/projects/loverscope.png';
 
 import './works.css';
 
@@ -172,6 +174,22 @@ export const projects = [
     link: 'https://e-commerce-product-page-novecento.netlify.app/',
     text: '<a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6" target="_blank">Frontend Mentor Challenge</a>, created to refine my workflow in building a React app.',
     img: img17,
+    technologies: ['react'],
+  },
+  {
+    id: 18,
+    title: 'Blog with NodeJS and MongoDB',
+    github: 'https://github.com/Novecento201/blog-ninja-node-mongo-tutorial',
+    text: 'My first project with <strong>NodeJS</strong> and <strong>MongoDB</strong>, created following <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9hAJ-ARcYq_z6lDZV7kT1xD">this tutorial</a>.',
+    img: img18,
+    technologies: ['nodejs', 'mongodb'],
+  },
+  {
+    id: 19,
+    title: 'Loverscope',
+    link: 'https://loverscope.netlify.app/',
+    text: 'A project created for a friend, to view daily horoscopes, explore and create posts, and play interactive astrology games, <strong>still under construction!</strong>',
+    img: img19,
     technologies: ['react'],
   },
 ];

@@ -12,6 +12,8 @@ const Works = () => {
     css: true,
     js: true,
     react: true,
+    nodejs: true,
+    mongodb: true,
   });
 
   const handleCheck = (e) => {
@@ -74,6 +76,24 @@ const Works = () => {
             />
             React
           </label>
+          <label className={` label ${filters.nodejs ? 'checked' : ''}`}>
+            <input
+              type="checkbox"
+              name="nodejs"
+              checked={filters.nodejs}
+              onChange={handleCheck}
+            />
+            NodeJS
+          </label>
+          <label className={` label ${filters.mongodb ? 'checked' : ''}`}>
+            <input
+              type="checkbox"
+              name="mongodb"
+              checked={filters.mongodb}
+              onChange={handleCheck}
+            />
+            MongoDB
+          </label>
         </div>
 
         {/* Result filter */}
@@ -93,18 +113,22 @@ const Works = () => {
                 <div className="post-header">
                   <h4>{project.title}</h4>
                   <div className="post-icons-container">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                    >
-                      <UilGithubAlt className="post-icons" />
-                    </a>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                    >
-                      <UilEye className="post-icons" />
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                      >
+                        <UilGithubAlt className="post-icons" />
+                      </a>
+                    )}
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                      >
+                        <UilEye className="post-icons" />
+                      </a>
+                    )}
                   </div>
                 </div>
 
