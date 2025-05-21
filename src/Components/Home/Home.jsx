@@ -1,13 +1,16 @@
-import SVGMarco from '../SVGMarco/SVGMarco';
-import WordsCarousel from '../WordsCarousel/WordsCarousel';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { SiDiscord } from 'react-icons/si';
+import SVGMarco from '../SVGMarco/SVGMarco';
+import WordsCarousel from '../WordsCarousel/WordsCarousel';
 
 import './home.css';
 
 const Home = () => {
   return (
-    <section id="home" className="home-section">
+    <section
+      id="home"
+      className="home-section"
+    >
       <div className="container home-container">
         <h2 className="home-title">Hi, I'm</h2>
 
@@ -18,7 +21,10 @@ const Home = () => {
         <WordsCarousel />
 
         <div className="home-socials">
-          <a href="https://github.com/Novecento201" target="_blank">
+          <a
+            href="https://github.com/Novecento201"
+            target="_blank"
+          >
             <AiFillGithub className="home-icon" />
           </a>
           <a
@@ -35,7 +41,10 @@ const Home = () => {
           </a>
         </div>
 
-        <a className="home-button" href="#contact">
+        <a
+          className="home-button"
+          href="#contact"
+        >
           Contact me
         </a>
       </div>
